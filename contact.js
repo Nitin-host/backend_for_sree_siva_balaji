@@ -33,6 +33,7 @@ module.exports = async (req, res) => {
         to: email,
         subject: 'Thank You for Contacting Us!',
         html: `
+            <p><img src="${process.env.IMAGE_URL}" alt="logo" width="300"/></p>
             <h2>Thank You, ${name}!</h2>
             <p>We have received your request regarding <strong>${service}</strong>.</p>
             <p>Our team will contact you shortly at ${phone} or ${email}.</p>
