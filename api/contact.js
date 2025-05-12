@@ -34,7 +34,7 @@ module.exports = async (req, res) => {
       <h2>New Contact Request</h2>
       <p><strong>Name:</strong> ${name}</p>
       <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Phone:</strong> ${phone}</p>
+      <p><strong>Phone:</strong> +${phone}</p>
       <p><strong>Service Type:</strong> ${service}</p>
     `,
   };
@@ -47,7 +47,7 @@ module.exports = async (req, res) => {
       <p><img src="${process.env.IMAGE_URL}" alt="logo" width="300"/></p>
       <h2>Thank You, ${name}!</h2>
       <p>We have received your request regarding <strong>${service}</strong>.</p>
-      <p>Our team will contact you shortly at ${phone} or ${email}.</p>
+      <p>Our team will contact you shortly at +${phone} or ${email}.</p>
       <p>— The Team</p>
     `,
   };
